@@ -45,7 +45,8 @@ public class bodyParts{
 	}
 	public String head(){
 		if (ache) {
-			d1 = "Headaches from football can be a sign of a possible concussion. Concussions are MEDICAL EMERGENCY and you MUST get medical attention, or you might lose your life.			d2 = "Perhaps you are dehydrated, which can cause headaches. To remedy this, drink pleny of fluids.";
+			d1 = "Headaches from football can be a sign of a possible concussion. Concussions are MEDICAL EMERGENCY and you MUST get medical attention, or you might lose your life.";
+		    d2 = "Perhaps you are dehydrated, which can cause headaches. To remedy this, drink pleny of fluids.";
 			d3 = "Some headaches might stem from stress. The way to cure this is to calm down at games and to practice stress-relieving activities.";
 		}
 		else if(painful) {
