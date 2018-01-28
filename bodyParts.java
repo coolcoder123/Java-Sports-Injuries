@@ -95,9 +95,9 @@ public class bodyParts{
 			d3 = "None";
 		}	
 		else if(sharp) {
-			d1 = "Perhaps you have torn a muscle in your arm. This requires immediate medical attention, but ice would help lower the pain and swelling in the short term.";
-			d2 = "Perhaps you have a fractured bone. This requires immediate medical attention, but ice can lower the pain/swelling but be gentle on contact";
-			d3 = "Perhaps you have dislocated a bone, like your elbow. This is a medical emergency and must be brought to medical attention. Ice might lower the pain/swelling, but DO NOT attempt to reset the bone without a professional.";
+			d1 = "If you were hit directly on the chest, you might have fractured your ribs. This can lead to stabbing pain, painful of breathing. Broken ribs can heal on their own by 6 weeks, but a doctor can prescribe pain medication to make it easier for you.";
+			d2 = "If you were hit very hard on the back (potentially by multiple people) you might have damaged your spine. Spinal damage is excruciating and often leads to paralysis. While doctors can keep you alive, they have no knowledge of how to reverse the spinal damage.";
+			d3 = "While not as easy to do, getting hit hard on the hips can lead to a hip fracture. This can cause sharp pain and leave you unable to stand, and is treated by surgery ranging from screws to total hip replacement.";
 		}
 	
 		return "Diagnosis 1: " + d1 + "\nDiagnosis 2: " + d2 + "\nDiagnosis 3: " + d3;
