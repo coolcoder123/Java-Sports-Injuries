@@ -45,8 +45,7 @@ public class bodyParts{
 	}
 	public String head(){
 		if (ache) {
-			d1 = "Headaches from football can be a sign of a possible concussion. Concussions are MEDICAL EMERGENCY and you MUST get medical attention, or you might lose your life.";
-			d2 = "Perhaps you are dehydrated, which can cause headaches. To remedy this, drink pleny of fluids.";
+			d1 = "Headaches from football can be a sign of a possible concussion. Concussions are MEDICAL EMERGENCY and you MUST get medical attention, or you might lose your life.			d2 = "Perhaps you are dehydrated, which can cause headaches. To remedy this, drink pleny of fluids.";
 			d3 = "Some headaches might stem from stress. The way to cure this is to calm down at games and to practice stress-relieving activities.";
 		}
 		else if(painful) {
@@ -92,7 +91,7 @@ public class bodyParts{
 		else if(painful) {
 			d1 = "Perhaps your arm has been hit by another player or something else. Ice would help the most to reduce any swelling and pain.";
 			d2 = "Perhaps you have pulled a muscle. A way to treat this is with ice, rest, compression, and elevation to reduce swelling and pain. Do NOT strain your arm until the pain has improved significantly.";
-			d3 = "None";
+			d3 = "Perhaps your pecs are strained. Ice, rest, compression, and elevation should be applied for the first two days.";
 		}	
 		else if(sharp) {
 			d1 = "If you were hit directly on the chest, you might have fractured your ribs. This can lead to stabbing pain, painful of breathing. Broken ribs can heal on their own by 6 weeks, but a doctor can prescribe pain medication to make it easier for you.";
