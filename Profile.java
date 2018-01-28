@@ -1,5 +1,6 @@
-import java.util.ArrayList;
+
 public class Profile {
+	String[][] arr = new String[0][0];
 	private String name, gender, ailment;
 	private int age, pain;
 	Database data = new Database();
@@ -29,8 +30,9 @@ public class Profile {
 	public void giveAthleteData() {
 		data.addArr(name, ageS, gender, ailment, pain);
 	}
-	public ArrayList<String[]> attainDataBase() {
-		return data.getDataBase();
+	public String[][] attainDataBase() {
+		 String[][] athletes = data.getDataBase();
+		return athletes;
 	}
 	public String toString() {
 		if (gender.equalsIgnoreCase("m"))

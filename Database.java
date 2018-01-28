@@ -1,7 +1,8 @@
-import java.util.ArrayList;
+
 public class Database {
-	private ArrayList<String[]> athletes = new ArrayList<String[]>();
-	
+	private int y=0;
+	private int z=0;
+	private String[][] athletes = new String[10][5];
 	public String[] createArr(String name, String age, String gender, String ailment, int painVal) {
 		String painn;
 		switch (painVal){
@@ -19,11 +20,12 @@ public class Database {
 		}
 	
 	public void addArr(String name, String age, String gender, String ailment, int painVal){
-		String[] x = this.createArr(name, age, gender, ailment, painVal);
-		athletes.add(x);
-		
+	
+		String[]x = this.createArr(name, age, gender, ailment, painVal);
+		athletes[y]= x;
+		y++;
 	}
-	public ArrayList<String[]> getDataBase(){
+	public String[][] getDataBase(){
 		return athletes;
 		
 	}

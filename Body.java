@@ -1,14 +1,10 @@
 import java.util.Scanner;
-import java.util.ArrayList;
-
-
 public class Body {
 	public static void main(String[] args) {
 		String name="", gender="", ailment = "",painS = "0",ageS = "0";
 		int age = 0, pain = 0;
 		
 		Scanner scan = new Scanner(System.in);
-		Scanner cleanup = new Scanner(System.in);
 		stringCheck check = new stringCheck();
 		Database data = new Database();
 		
@@ -18,11 +14,9 @@ public class Body {
 		System.out.println("Hello there " + name +", please enter your age: ");
 		
 		ageS = scan.nextLine();
-		cleanup.nextLine();
 		while (check.checkString(ageS)==0) {
 			System.out.println("\'"+ageS+"\' is a string, please use an integer for your age");
 			ageS = scan.nextLine();
-			cleanup.nextLine();
 		}
 		age = Integer.parseInt(ageS);
 		gender="";
@@ -39,11 +33,10 @@ public class Body {
 		
 		System.out.println(person.toString());
 		System.out.println();
-		
+		ailment = "";
 		while(ailment.equalsIgnoreCase("arm")==false && ailment.equalsIgnoreCase("shoulder")==false && ailment.equalsIgnoreCase("head")==false && ailment.equalsIgnoreCase("leg")==false && ailment.equalsIgnoreCase("torso")==false) {
 			System.out.println("Where are you feeling pain or discomfort?(arm, shoulder, head, leg, torso)");
 			ailment = scan.nextLine();
-			cleanup.nextLine();
 			if (ailment.equalsIgnoreCase("arm")==false && ailment.equalsIgnoreCase("shoulder")==false && ailment.equalsIgnoreCase("head")==false && ailment.equalsIgnoreCase("leg")==false && ailment.equalsIgnoreCase("torso")==false) {
 				System.out.println("\'"+ailment+"\' is not accounted for, instead choose from: arm, shoulder, head, leg, torso");
 			}
@@ -80,14 +73,15 @@ public class Body {
 		person.giveAthleteData();
 		System.out.println();
 		
-		ArrayList<String[]> athletes = person.attainDataBase();
+		//String[][] bigArr = person.attainDataBase();
 		
-		for (int z=0;z<5;z++) {
-			for(int i=0;i<athletes.size();i++) {
-				String[] arr = athletes.get(i);
-				System.out.println(arr[z]+" | ");
-			}
-		}
+		
+			//for(int i=0;i<10;i++) {
+			//	for (int z=0;z<5;z++) {
+			//	System.out.println(bigArr[i][z]+" | ");
+			//}
+			//	System.out.print("\n");
+		//}
 		}
 	}
 }
