@@ -27,7 +27,6 @@ public class bodyParts{
 			if (ache) {
 				d1 = "Perhaps your arm might have been strained. Rest or ice would be beneficial for your arms, but proper throwing/catching technique would be beneficial in the long run";
 				d2 = "Perhaps your elbow is sprained. A way to treat this is by doing physical therapy, which can circulate blood through the elbow";
-				d3 = "None";
 			}
 			else if(painful) {
 				d1 = "Perhaps your arm has been hit by another player or something else. Ice would help the most to reduce any swelling and pain.";
