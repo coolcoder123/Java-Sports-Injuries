@@ -26,13 +26,13 @@ public class bodyParts{
 	public String arm(){
 			if (ache) {
 				d1 = "Perhaps your arm might have been strained. Rest or ice would be beneficial for your arms, but proper throwing/catching technique would be beneficial in the long run";
-				d2 = "None";
+				d2 = "Perhaps your elbow is sprained. A way to treat this is by doing physical therapy, which can circulate blood through the elbow";
 				d3 = "None";
 			}
 			else if(painful) {
 				d1 = "Perhaps your arm has been hit by another player or something else. Ice would help the most to reduce any swelling and pain.";
 				d2 = "Perhaps you have pulled a muscle. A way to treat this is with ice, rest, compression, and elevation to reduce swelling and pain. Do NOT strain your arm until the pain has improved significantly.";
-				d3 = "None";
+				d3 = "Perhaps your hand is fractured. Ice should be applied immediately after injury, and the arm should be moved as much as possible to prevent it from stiffening up.";
 			}	
 			else if(sharp) {
 				d1 = "Perhaps you have torn a muscle in your arm. This requires immediate medical attention, but ice would help lower the pain and swelling in the short term.";
@@ -51,7 +51,7 @@ public class bodyParts{
 		else if(painful) {
 			d1 = "Perhaps you have sustained an impact to the head. Ice will lower the swelling and the pain, but it would be smart to check for signs of a concussion if it was a hard blow.";
 			d2 = "Perhaps you have experienced whiplash, where your head snaps forward or backwards quickly, causing strain on your neck and head. This can lead to a concussion as well, so get checked at a hospital if it is painful enough";
-			d3 = "None";
+			d3 = "Perhaps you have a hemorrhage. A medical scan will be necessary and if there is a large amount of bleeding, surgery may need to be done.";
 		}	
 		else if(sharp) {
 			d1 = "Perhaps you are experiencing \'ice pick headaches\', which makes you feel like an ice pick has stabbed your head. This can arise from concussions, and a doctor may allieviate your pain.";
@@ -105,16 +105,16 @@ public class bodyParts{
 	public String shoulder(){
 		if (ache) {
 			d1 = "Perhaps your arm might have been strained. Rest or ice would be beneficial for your arms, but proper throwing/catching technique would be beneficial in the long run";
-			d2 = "None";
-			d3 = "None";
+			d2 = "Perhaps your labrum is torn. Rest and physical therapy are necessary for recovery.";
+			d3 = "Perhaps you have a shoulder cuff injury. The shoulder should be protected and phyical therapy must be done for optimal recovery.";
 		}
 		else if(painful) {
 			d1 = "Perhaps your arm has been hit by another player or something else. Ice would help the most to reduce any swelling and pain.";
 			d2 = "Perhaps you have pulled a muscle. A way to treat this is with ice, rest, compression, and elevation to reduce swelling and pain. Do NOT strain your arm until the pain has improved significantly.";
-			d3 = "None";
+			d3 = "Perhaps your shoulder has been dislocated. Ice can help reduce swelling.";
 		}	
 		else if(sharp) {
-			d1 = "Perhaps you have torn a muscle in your arm. This requires immediate medical attention, but ice would help lower the pain and swelling in the short term.";
+			d1 = "Perhaps your shoulder has been separated. Rest and ice will reduce swelling and allow the tissues to heal.";
 			d2 = "Perhaps you have a fractured bone. This requires immediate medical attention, but ice can lower the pain/swelling but be gentle on contact";
 			d3 = "Perhaps you have dislocated a bone, like your elbow. This is a medical emergency and must be brought to medical attention. Ice might lower the pain/swelling, but DO NOT attempt to reset the bone without a professional.";
 		}
