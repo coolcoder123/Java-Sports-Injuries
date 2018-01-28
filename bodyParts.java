@@ -65,19 +65,19 @@ public class bodyParts{
 	}
 	public String leg(){
 		if (ache) {
-			d1 = "Perhaps your arm might have been strained. Rest or ice would be beneficial for your arms, but proper throwing/catching technique would be beneficial in the long run";
-			d2 = "None";
-			d3 = "None";
+			d1 = "Perhaps you have a knee injury. Rest is necessary to prevent further injury to the weakest parts of the knee";
+			d2 = "Perhaps your achilles is ruptured. Though it isn't necessary to stop all physical activity, it should be reduced to prevent further injury.";
+			d3 = "Perhaps you have an ankle sprain. Putting ice on the ankle, but with a thin piece of cloth between, will reduce swelling";
 		}
 		else if(painful) {
-			d1 = "Perhaps your arm has been hit by another player or something else. Ice would help the most to reduce any swelling and pain.";
-			d2 = "Perhaps you have pulled a muscle. A way to treat this is with ice, rest, compression, and elevation to reduce swelling and pain. Do NOT strain your arm until the pain has improved significantly.";
-			d3 = "None";
+			d1 = "Perhaps you have a shin split. Rest is necessary to prevent further injury.";
+			d2 = "Perhaps you have iliotibial leg pain, Ret is necessary to heal the iliotibial band.";
+			d3 = "Perhaps you have a leg cramp. Adequate hydration is necessary to heal leg cramps.";
 		}	
 		else if(sharp) {
-			d1 = "Perhaps you have torn a muscle in your arm. This requires immediate medical attention, but ice would help lower the pain and swelling in the short term.";
-			d2 = "Perhaps you have a fractured bone. This requires immediate medical attention, but ice can lower the pain/swelling but be gentle on contact";
-			d3 = "Perhaps you have dislocated a bone, like your elbow. This is a medical emergency and must be brought to medical attention. Ice might lower the pain/swelling, but DO NOT attempt to reset the bone without a professional.";
+			d1 = "Perhaps you pulled a hamstring. Resting for two to three weeks is necessary to prevent further injury.";
+			d2 = "Perhaps your big toe is dislocated. Rest, ice, compression, and elevation above heart level are necesary for recovery.  ";
+			d3 = "Perhaps you have strained your groin. Rest, ice, compression, and elevation are the best methods for immediate reovery.";
 		}
 		
 		return "Diagnosis 1: " + d1 + "\nDiagnosis 2: " + d2 + "\nDiagnosis 3: " + d3;
