@@ -27,6 +27,7 @@ public class bodyParts{
 			if (ache) {
 				d1 = "Perhaps your arm might have been strained. Rest or ice would be beneficial for your arms, but proper throwing/catching technique would be beneficial in the long run";
 				d2 = "Perhaps your elbow is sprained. A way to treat this is by doing physical therapy, which can circulate blood through the elbow";
+				d3 = "None";
 			}
 			else if(painful) {
 				d1 = "Perhaps your arm has been hit by another player or something else. Ice would help the most to reduce any swelling and pain.";
@@ -45,7 +46,7 @@ public class bodyParts{
 	public String head(){
 		if (ache) {
 			d1 = "Headaches from football can be a sign of a possible concussion. Concussions are MEDICAL EMERGENCY and you MUST get medical attention, or you might lose your life.";
-		    d2 = "Perhaps you are dehydrated, which can cause headaches. To remedy this, drink pleny of fluids.";
+			d2 = "Perhaps you are dehydrated, which can cause headaches. To remedy this, drink pleny of fluids.";
 			d3 = "Some headaches might stem from stress. The way to cure this is to calm down at games and to practice stress-relieving activities.";
 		}
 		else if(painful) {
@@ -75,9 +76,10 @@ public class bodyParts{
 		}	
 		else if(sharp) {
 			d1 = "Perhaps you pulled a hamstring. Resting for two to three weeks is necessary to prevent further injury.";
-			d2 = "Perhaps your big toe is dislocated. Rest, ice, compression, and elevation above heart level are necesary for recovery.  ";
+			d2 = "Perhaps your big toe is dislocated. Rest, ice, compression, and elevation above heart level are necesary for recovery.";
 			d3 = "Perhaps you have strained your groin. Rest, ice, compression, and elevation are the best methods for immediate reovery.";
 		}
+
 		
 		return "Diagnosis 1: " + d1 + "\nDiagnosis 2: " + d2 + "\nDiagnosis 3: " + d3;
 	
@@ -104,19 +106,19 @@ public class bodyParts{
 	}
 	public String shoulder(){
 		if (ache) {
-			d1 = "Perhaps your arm might have been strained. Rest or ice would be beneficial for your arms, but proper throwing/catching technique would be beneficial in the long run";
-			d2 = "Perhaps your labrum is torn. Rest and physical therapy are necessary for recovery.";
-			d3 = "Perhaps you have a shoulder cuff injury. The shoulder should be protected and phyical therapy must be done for optimal recovery.";
+			d1 = "If your shoulder aches and makes clicking noises when overhead, then you might have rotator cuff tendonitis. This is can be caused by repeated throwing, and can be treated by ice, anti-inflammatory medicine, and by giving the shoulder a rest.";
+			d2 = "If you sustain shoulder injuries playing sports, you could develop frozen shoulder in the future. It lasts for 2-3 years, as it hurts when you move the shoulder near the beginning, then it stiffens, then it \'thaws\' near the end. A doctor can inject steroids into the shoulder to decrease pain and increase mobility.";
+			d3 = "Perhaps your arm has been hit by another player or something else. Ice would help the most to reduce any swelling and pain.";
 		}
 		else if(painful) {
-			d1 = "Perhaps your arm has been hit by another player or something else. Ice would help the most to reduce any swelling and pain.";
-			d2 = "Perhaps you have pulled a muscle. A way to treat this is with ice, rest, compression, and elevation to reduce swelling and pain. Do NOT strain your arm until the pain has improved significantly.";
-			d3 = "Perhaps your shoulder has been dislocated. Ice can help reduce swelling.";
+			d1 = "If you have lost the ability to use certain muscles in your hand, you may have brachial plexus injury. Less severe hits on the shoulder nerve feel like short shocks, but more severe hits lead to loss of feeling in the hand and harsh pain. A doctor can treat this, but the treatment is somewhat invasive.";
+			d2 = "Taking hits in football can lead to the ligament connecting your shoulder to tear, causing \'separated shoulder\'. This causes harsh pain and swelling, but can be treated with rest, ice, and pain relievers. Surgery is not usually required.";
+			d3 = "None";
 		}	
 		else if(sharp) {
-			d1 = "Perhaps your shoulder has been separated. Rest and ice will reduce swelling and allow the tissues to heal.";
-			d2 = "Perhaps you have a fractured bone. This requires immediate medical attention, but ice can lower the pain/swelling but be gentle on contact";
-			d3 = "Perhaps you have dislocated a bone, like your elbow. This is a medical emergency and must be brought to medical attention. Ice might lower the pain/swelling, but DO NOT attempt to reset the bone without a professional.";
+			d1 = "Perhaps you dislocated your shoulder from its socket, which is extremely painful. It is important to NOT try to reset the shoulder yourself, but to let a doctor do it. But, putting ice on it can lower the pain/swelling.";
+			d2 = "If you got hit hard enough on the shoulder and your shoulder starts to sag, you might have gotten a fractured collarbone. This is extremely painful and should be treated by a doctor immediately. Ice can make the shoulder less painful.";
+			d3 = "You might have bursitis if your shoulder is excessively swollen and is in debilitating pain. This can be caused by overhead lifting and throwing, and can be treated an injection. This can be avoided by using proper lifting technique.";
 		}
 	
 		return "Diagnosis 1: " + d1 + "\nDiagnosis 2: " + d2 + "\nDiagnosis 3: " + d3;
